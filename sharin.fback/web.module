@@ -1,0 +1,169 @@
+<?php
+/**
+ * Powered by linzhv@qq.com.
+ * Github: git@github.com:linzongho/sharin2.git
+ * User: lich4ung
+ * Date: 16-9-3
+ * Time: 上午10:48
+ */
+namespace {
+
+    use Sharin\ClassLoader;
+    use Sharin\Behaviour;
+    use Sharin\Core\Dispatcher;
+    use Sharin\Core\Router;
+    use Sharin\Developer;
+    use Sharin\Exceptions\ParameterInvalidException;
+    use Sharin\Exceptions\RouteParseFailedException;
+    use Sharin\SharinException;
+
+    $GLOBALS['webengine_begin'] = [
+        $_SERVER['REQUEST_TIME_FLOAT'],
+        memory_get_usage(),
+    ];
+    require __DIR__.'/Common/constant.web.inc';
+    require __DIR__.'/classes.inc';//加载类包
+    if(SR_DEBUG_MODE_ON) {
+        require __DIR__.'/Common/debug_suit.inc';
+        require __DIR__.'/Common/environment.inc';
+    }
+
+    //error  display
+    if(SR_DEBUG_MODE_ON){
+        error_reporting(-1);
+        ini_set('display_errors',1);
+    }else{
+        error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT & ~E_USER_NOTICE & ~E_USER_DEPRECATED);//php5.3version use code: error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_USER_NOTICE);
+        ini_set('display_errors', 0);
+    }
+
+    /**
+     * Class Sharin
+     * Outer interface called in entrance file which in root namespace
+     */
+    final class Sharin {
+
+        private static $config = [
+            'APP_NAME'          => 'App',//App dir name
+            'EXCEPTION_CLEAN'   => false,//it will clean the output before if error or exception occur
+            'TIMEZONE_ZONE'     => 'Asia/Shanghai',
+
+            'CLASS_LOADER'          => null,//外部的类加载必须兼容ClassLoader::load()
+            'ERROR_HANDLER'         => null,
+            'EXCEPTION_HANDLER'     => null,
+
+        ];
+
+        /**
+         * initize the behaviour of this system
+         * @param array $config system configuration
+         * @return void
+         * @throws ParameterInvalidException
+         */
+        public static function init(array $config=NONE_CONFIG){
+            static $needs = true;
+            if($needs){//防止重复初始化
+                if(SR_DEBUG_MODE_ON) Developer::import('app_begin',$GLOBALS['webengine_begin']);
+                Behaviour::listen(ON_INIT);
+                $config and self::$config = array_merge(self::$config,$config);
+
+                define('SR_APP_NAME',self::$config['APP_NAME']);
+                define('SR_EXCEPTION_CLEAN',self::$config['EXCEPTION_CLEAN']);
+                define('SR_PATH_APP',   SR_PATH_BASE.'/'.SR_APP_NAME);
+                date_default_timezone_set(self::$config['TIMEZONE_ZONE']) or die('Date default timezone set failed!');
+
+                //behavior
+                self::registerClassLoader(self::$config['CLASS_LOADER']);
+                self::registerErrorHandler(self::$config['ERROR_HANDLER']);
+                self::registerExceptionHandler(self::$config['EXCEPTION_HANDLER']);
+                register_shutdown_function(function (){/* 脚本结束时将会自动输出，所以不能把输出控制语句放到这里 */
+                    Behaviour::listen(ON_SHUTDOWN);
+                    if(SR_PAGE_TRACE_ON and !SR_IS_AJAX) Developer::trace();//show the trace info
+                });
+
+                Behaviour::listen(ON_INITED);
+                $needs = false;
+            }
+        }
+
+        /**
+         * Start Application
+         * @throws RouteParseFailedException
+         */
+        public static function start(){
+            //执行服务端程序
+            Behaviour::listen(ON_START);
+            //可以执行一些安全性检查
+            //parse uri
+            Behaviour::listen(ON_ROUTE);
+            $router = Router::instance();
+            $outerback = $router->parse();
+            if($outerback !== true) throw new RouteParseFailedException($router);
+            $rq_module  = $router->getModules();
+            $rq_contler = $router->getController();
+            $rq_action  = $router->getAction();
+            //URL中解析结果合并到$_GET中，$_GET的其他参数不能和之前的一样，否则会被解析结果覆盖,注意到$_GET和$_REQUEST并不同步，当动态添加元素到$_GET中后，$_REQUEST中不会自动添加
+            $rq_params = $router->getParameters();
+            $rq_params and $_GET = array_merge($_GET,$rq_params);
+
+            Behaviour::listen(ON_CHECK);
+            //dispatch
+            $dispatcher = Dispatcher::instance();
+            $dispatcher->check($rq_module,$rq_contler,$rq_action);
+            $rq_module  = $dispatcher->getModule();
+            $rq_contler = $dispatcher->getController();
+            $rq_action  = $dispatcher->getAction();
+
+            //在执行方法之前定义常量,为了能在控制器的构造函数中使用这三个常量::::define后面不可以接数组
+            define('SR_REQUEST_MODULE',     is_array($rq_module)?   end($rq_module):$rq_module);//请求的模块
+            define('SR_REQUEST_CONTROLLER', is_array($rq_contler)?  end($rq_contler):$rq_contler);//请求的控制器
+            define('SR_REQUEST_ACTION',     is_array($rq_action)?   end($rq_action):$rq_action);//请求的操作
+
+            Behaviour::listen(ON_DISPATCH,[SR_REQUEST_MODULE,SR_REQUEST_CONTROLLER,SR_REQUEST_ACTION]);
+
+            $actionback = $dispatcher->dispatch($rq_module,$rq_contler,$rq_action);
+            //exec的结果将用于判断输出缓存，如果为int，表示缓存时间，0表示无限缓存XXX,将来将创造更多的扩展，目前仅限于int
+
+            Behaviour::listen(ON_STOP,[$actionback,[SR_REQUEST_MODULE,SR_REQUEST_CONTROLLER,SR_REQUEST_ACTION]]);
+        }
+
+        public static function registerClassLoader(callable $loader=null){
+            if(null === $loader){
+                include_once __DIR__.'/ClassLoader.class.php';
+                $loader = [ClassLoader::class,'load'];
+            }
+            return spl_autoload_register($loader,false,true);
+        }
+
+        /**
+         * 注册错误处理函数
+         * @param callable|null $handler
+         * @return void
+         */
+        private static function registerErrorHandler(callable $handler=null){
+            $handler and $handler = self::$config['ERROR_HANDLER'];
+            //如果之前有定义过错误处理程序，则返回该程序名称的 string；如果是内置的错误处理程序，则返回 NULL
+            self::$config['ERROR_HANDLER'] = set_error_handler($handler?$handler:[SharinException::class,'handleError']);
+        }
+
+        /**
+         * 注册异常处理函数
+         * @param callable|null $handler
+         * @return void
+         */
+        private static function registerExceptionHandler(callable $handler=null){
+            $handler and $handler = self::$config['EXCEPTION_HANDLER'];
+            //返回之前定义的异常处理程序的名称，或者在错误时返回 NULL。 如果之前没有定义一个错误处理程序，也会返回 NULL。 如果参数使用了 NULL，重置处理程序为默认状态，并且会返回一个 TRUE
+            self::$config['EXCEPTION_HANDLER'] = set_exception_handler($handler?$handler:[SharinException::class,'handleException']);
+        }
+
+        /**
+         * 逆初始化，取消错误异常等注册并恢复原状
+         * @static
+         */
+        public static function unregister(){
+            self::$config['ERROR_HANDLER'] and set_error_handler(self::$config['ERROR_HANDLER']);
+            self::$config['EXCEPTION_HANDLER'] and set_exception_handler(self::$config['EXCEPTION_HANDLER']);
+        }
+    }
+}

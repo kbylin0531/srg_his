@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+    order deny,allow
+    allow from all
+
+    Options +FollowSymlinks
+    RewriteEngine On
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+
+    #URL重写
+    RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
+</IfModule>
+
+<Files *>
+    #防止罗列资源文件
+    Options -Indexes
+</Files>

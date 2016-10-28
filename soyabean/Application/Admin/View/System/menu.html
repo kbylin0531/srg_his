@@ -1,0 +1,80 @@
+<extend file="/System/Common/View/admin.html" />
+<block name="style">
+    <style>
+        #logo_pane .row { margin-left:-20px}
+        #logo_pane .row:after,.row:before { display:table;content:"";line-height:0}
+        #logo_pane .row:after { clear:both}
+        #logo_pane li { line-height:20px}
+        #logo_pane  [class*=" icon-"] { display:inline-block;width:14px;height:14px;line-height:14px;vertical-align:text-top;background-position:14px 14px;background-repeat:no-repeat;margin-top:1px}
+        #logo_pane .the-icons li {  cursor:pointer;line-height:32px;height:32px;padding-left:12px;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px}
+        #logo_pane  .the-icons li [class*=" icon-"]{  width:32px;font-size:14px}
+        #logo_pane .the-icons li:hover {  background-color:#fbf4f4}
+        #logo_pane .the-icons li:hover [class*=" icon-"]:before {  font-size:28px;vertical-align:-5px}
+    </style>
+</block>
+<block name='script'>
+    <script>
+        var public_url = '__CONTROLLER__/';
+        soya.load([
+            'assets/plugins/jquery.nestable/jquery.nestable.js',
+            'assets/plugins/jquery.nestable/jquery.nestable.css',
+            'assets/app/script/system/menu_management.js'
+        ]);
+    </script>
+</block>
+<block name="stage">
+<!-- 添加顶部菜单 -->
+<div id="MenuItemAddModal">
+    <form class="form-horizontal" id="MenuItemAddForm" role="form">
+        <input name="id" type="hidden">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">名称</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control input-sm" name="title" placeholder="请输入显示名称">
+                <p class="help-block">用于显示在菜单上的文字,不建议过长</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">图标选择</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control input-sm" name="icon" placeholder="请输入图标名称,如'icon-circle-blank'">
+                <p class="help-block">请参照font-awsome</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">值</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control input-sm" name="value" placeholder="">
+                <p class="help-block">如'/Admin/System/menu'</p>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="col-md-6">
+            <div class="col-md-4"><h5>顶部菜单 </h5></div>
+        </div>
+        <div class="col-md-6">
+            <div class="col-md-4"><h5>侧边栏菜单</h5></div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="col-md-6">
+            <div class="col-md-2"><button type="button" class="btn btn-sm dazzling" id="addTop"><i class="fa fa-plus">&nbsp;</i> 添加</button></div>
+            <div class="col-md-2"><button type="button" class="btn btn-sm dazzling" id="saveTop"><i class="fa fa-save">&nbsp;</i> 保存</button></div>
+        </div>
+        <div class="col-md-6">
+            <div class="col-md-2"><button type="button" class="btn btn-sm dazzling" id="addSide"><i class="fa fa-plus">&nbsp;</i> 添加</button></div>
+            <div class="col-md-2"><button type="button" class="btn btn-sm dazzling" id="saveSide"><i class="fa fa-save">&nbsp;</i> 保存</button></div>
+        </div>
+    </div>
+    <div class="col-md-12">&nbsp;</div>
+    <div class="col-md-12">
+        <div class="col-md-6 nestable_container" id="top_nestable_attach"></div>
+        <div class="col-md-6 nestable_container" id="side_nestable_attach"></div>
+    </div>
+</div>
+</block>
+

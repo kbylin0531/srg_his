@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class=" js cssanimations" lang="zh-cn"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Samsung 网格加载效果 | Demo 2</title>
+		<meta name="description" content="Grid Loading and Hover Effect: Recreating Samsung's grid loading effect">
+		<meta name="keywords" content="grid loading, swipe, effect, slide, masonry, web design, tutorial">
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="demo.css">
+		<link rel="stylesheet" type="text/css" href="component.css">
+		<style>
+		body {
+			background: #444;
+		}
+		.codrops-demos a.current-demo {
+			color: #999;
+		}
+		.codrops-header h1 {
+			margin-top: 50px;
+			color: #fff;
+		}
+		</style>
+		<script src="modernizr.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<section class="grid-wrap">
+				<ul style="position: relative; width: 1256px; height: 2623px;" class="grid swipe-down loaded" id="grid">
+					<li class="shown" style="position: absolute; left: 0px; top: 0px;"><a href="#/15944679/Kenpo-News-April-2014-issue"><img src="1.jpg" alt="img01"><h3>Kenpo News April 2014 issue</h3></a></li>
+					<li class="shown" style="position: absolute; left: 314px; top: 0px;"><a href="#/15758125/SQUET-April-2014-issue"><img src="2.jpg" alt="img02"><h3>SQUET April 2014 issue</h3></a></li>
+					<li class="shown" style="position: absolute; left: 628px; top: 0px;"><a href="#/15586227/MONOCLE-issue-72"><img src="3.jpg" alt="img03"><h3>MONOCLE issue 72</h3></a></li>
+					<li class="shown" style="position: absolute; left: 942px; top: 0px;"><a href="#/11880495/TOWN-Winter-2013"><img src="4.jpg" alt="img04"><h3>TOWN Winter 2013</h3></a></li>
+					<li class="shown" style="position: absolute; left: 628px; top: 238px;"><a href="#/11455333/Quarterly-Musashino-autumn-of-2013-issue"><img src="5.jpg" alt="img05"><h3>Quarterly Musashino autumn of 2013 issue</h3></a></li>
+					<li class="shown" style="position: absolute; left: 0px; top: 399px;"><a href="#/12866129/MONOCLE-issue-69"><img src="6.jpg" alt="img06"><h3>MONOCLE issue 69</h3></a></li>
+					<li class="shown" style="position: absolute; left: 942px; top: 434px;"><a href="#/16631085/Real-Simple-May-2014"><img src="7.jpg" alt="img07"><h3>Real Simple May 2014</h3></a></li>
+					<li class="shown" style="position: absolute; left: 314px; top: 435px;"><a href="#/11727343/The-65th-Book-Week"><img src="8.jpg" alt="img08"><h3>The 65th Book Week</h3></a></li>
+					<li style="position: absolute; left: 628px; top: 609px;"><a href="#/16631085/Real-Simple-May-2014"><img style="animation-delay: 357.857ms;" src="9.jpg" alt="img09"><h3 style="animation-delay: 357.857ms;">Real Simple May 2014</h3><div style="background: rgb(93, 155, 152) none repeat scroll 0% 0%; animation-delay: 357.857ms;" class="curtain"></div></a></li>
+					<li style="position: absolute; left: 0px; top: 656px;"><a href="#/15566747/Quarterly-Musashino-spring-of-2014-issue"><img style="animation-delay: 423.721ms;" src="10.jpg" alt="img10"><h3 style="animation-delay: 423.721ms;">Quarterly Musashino spring of 2014 issue</h3><div style="background: rgb(178, 66, 55) none repeat scroll 0% 0%; animation-delay: 423.721ms;" class="curtain"></div></a></li>
+					<li style="position: absolute; left: 942px; top: 727px;"><a href="#/11134427/MAJESTY-express-vol-01"><img style="animation-delay: 132.315ms;" src="11.jpg" alt="img11"><h3 style="animation-delay: 132.315ms;">MAJESTY express vol. 01</h3><div style="background: rgb(217, 204, 100) none repeat scroll 0% 0%; animation-delay: 132.315ms;" class="curtain"></div></a></li>
+					<li style="position: absolute; left: 314px; top: 869px;"><a href="#/13329103/Shitamachi-Rocket"><img style="animation-delay: 225.765ms;" src="12.jpg" alt="img12"><h3 style="animation-delay: 225.765ms;">Shitamachi Rocket</h3><div style="background: rgb(60, 86, 111) none repeat scroll 0% 0%; animation-delay: 225.765ms;" class="curtain"></div></a></li>
+					<li style="position: absolute; left: 628px; top: 994px;"><a href="#/13285315/Quarterly-Musashino-winter-of-2013-issue"><img style="animation-delay: 236.695ms;" src="13.jpg" alt="img13"><h3 style="animation-delay: 236.695ms;">Quarterly Musashino winter of 2013 issue</h3><div style="background: rgb(231, 57, 20) none repeat scroll 0% 0%; animation-delay: 236.695ms;" class="curtain"></div></a></li>
+					<li style="position: absolute; left: 0px; top: 1027px;"><a href="#/16541811/MAINICHI-CHUUGOKUGO-May-2014"><img style="animation-delay: 114.113ms;" src="14.jpg" alt="img14"><h3 style="animation-delay: 114.113ms;">MAINICHI CHUUGOKUGO April 2014</h3><div style="background: rgb(230, 230, 228) none repeat scroll 0% 0%; animation-delay: 114.113ms;" class="curtain"></div></a></li>
+					<li style="position: absolute; left: 942px; top: 1125px;"><a href="#/15944679/Kenpo-News-April-2014-issue"><img style="animation-delay: 397.879ms;" src="1.jpg" alt="img01"><h3 style="animation-delay: 397.879ms;">Kenpo News April 2014 issue</h3><div style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; animation-delay: 397.879ms;" class="curtain"></div></a></li>
+					<li style="position: absolute; left: 0px; top: 1267px;"><a href="#/15758125/SQUET-April-2014-issue"><img style="animation-delay: 148.231ms;" src="2.jpg" alt="img02"><h3 style="animation-delay: 148.231ms;">SQUET April 2014 issue</h3><div style="background: rgb(236, 114, 125) none repeat scroll 0% 0%; animation-delay: 148.231ms;" class="curtain"></div></a></li>
+					<li style="position: absolute; left: 314px; top: 1306px;"><a href="#/15586227/MONOCLE-issue-72"><img style="animation-delay: 89.6463ms;" src="3.jpg" alt="img03"><h3 style="animation-delay: 89.6463ms;">MONOCLE issue 72</h3><div style="background: rgb(5, 61, 118) none repeat scroll 0% 0%; animation-delay: 89.6463ms;" class="curtain"></div></a></li>
+					<li style="position: absolute; left: 628px; top: 1365px;"><a href="#/11880495/TOWN-Winter-2013"><img style="animation-delay: 100.657ms;" src="4.jpg" alt="img04"><h3 style="animation-delay: 100.657ms;">TOWN Winter 2013</h3><div style="background: rgb(246, 215, 73) none repeat scroll 0% 0%; animation-delay: 100.657ms;" class="curtain"></div></a></li>
+					<li style="position: absolute; left: 942px; top: 1524px;"><a href="#/11455333/Quarterly-Musashino-autumn-of-2013-issue"><img style="animation-delay: 410.436ms;" src="5.jpg" alt="img05"><h3 style="animation-delay: 410.436ms;">Quarterly Musashino autumn of 2013 issue</h3><div style="background: rgb(250, 222, 0) none repeat scroll 0% 0%; animation-delay: 410.436ms;" class="curtain"></div></a></li>
+					<li style="position: absolute; left: 314px; top: 1544px;"><a href="#/12866129/MONOCLE-issue-69"><img style="animation-delay: 91.4967ms;" src="6.jpg" alt="img06"><h3 style="animation-delay: 91.4967ms;">MONOCLE issue 69</h3><div style="background: rgb(231, 71, 47) none repeat scroll 0% 0%; animation-delay: 91.4967ms;" class="curtain"></div></a></li>
+					<li style="position: absolute; left: 0px; top: 1702px;"><a href="#/16631085/Real-Simple-May-2014"><img style="animation-delay: 68.9928ms;" src="7.jpg" alt="img07"><h3 style="animation-delay: 68.9928ms;">Real Simple May 2014</h3><div style="background: rgb(82, 160, 164) none repeat scroll 0% 0%; animation-delay: 68.9928ms;" class="curtain"></div></a></li>
+					<li style="position: absolute; left: 628px; top: 1799px;"><a href="#/11727343/The-65th-Book-Week"><img style="animation-delay: 57.6044ms;" src="8.jpg" alt="img08"><h3 style="animation-delay: 57.6044ms;">The 65th Book Week</h3><div style="background: rgb(192, 177, 22) none repeat scroll 0% 0%; animation-delay: 57.6044ms;" class="curtain"></div></a></li>
+					<li style="position: absolute; left: 314px; top: 1801px;"><a href="#/16631085/Real-Simple-May-2014"><img style="animation-delay: 312.585ms;" src="9.jpg" alt="img09"><h3 style="animation-delay: 312.585ms;">Real Simple May 2014</h3><div style="background: rgb(93, 155, 152) none repeat scroll 0% 0%; animation-delay: 312.585ms;" class="curtain"></div></a></li>
+					<li style="position: absolute; left: 942px; top: 1895px;"><a href="#/15566747/Quarterly-Musashino-spring-of-2014-issue"><img style="animation-delay: 15.9976ms;" src="10.jpg" alt="img10"><h3 style="animation-delay: 15.9976ms;">Quarterly Musashino spring of 2014 issue</h3><div style="background: rgb(178, 66, 55) none repeat scroll 0% 0%; animation-delay: 15.9976ms;" class="curtain"></div></a></li>
+					<li style="position: absolute; left: 0px; top: 1995px;"><a href="#/11134427/MAJESTY-express-vol-01"><img style="animation-delay: 88.8066ms;" src="11.jpg" alt="img11"><h3 style="animation-delay: 88.8066ms;">MAJESTY express vol. 01</h3><div style="background: rgb(217, 204, 100) none repeat scroll 0% 0%; animation-delay: 88.8066ms;" class="curtain"></div></a></li>
+					<li style="position: absolute; left: 314px; top: 2186px;"><a href="#/13329103/Shitamachi-Rocket"><img style="animation-delay: 205.793ms;" src="12.jpg" alt="img12"><h3 style="animation-delay: 205.793ms;">Shitamachi Rocket</h3><div style="background: rgb(60, 86, 111) none repeat scroll 0% 0%; animation-delay: 205.793ms;" class="curtain"></div></a></li>
+					<li style="position: absolute; left: 628px; top: 2233px;"><a href="#/13285315/Quarterly-Musashino-winter-of-2013-issue"><img style="animation-delay: 262.099ms;" src="13.jpg" alt="img13"><h3 style="animation-delay: 262.099ms;">Quarterly Musashino winter of 2013 issue</h3><div style="background: rgb(231, 57, 20) none repeat scroll 0% 0%; animation-delay: 262.099ms;" class="curtain"></div></a></li>
+					<li style="position: absolute; left: 942px; top: 2266px;"><a href="#/16541811/MAINICHI-CHUUGOKUGO-May-2014"><img style="animation-delay: 488.262ms;" src="14.jpg" alt="img14"><h3 style="animation-delay: 488.262ms;">MAINICHI CHUUGOKUGO April 2014</h3><div style="background: rgb(230, 230, 228) none repeat scroll 0% 0%; animation-delay: 488.262ms;" class="curtain"></div></a></li>
+				</ul>
+			</section>
+		</div><!-- /container -->
+		<div class="footer-banner" style="width:728px; margin:160px auto 100px"></div>
+		<script src="masonry.js"></script>
+		<script src="imagesloaded.js"></script>
+		<script src="classie.js"></script>
+		<script src="colorfinder-1.js"></script>
+		<script src="gridScrollFx.js"></script>
+		<script>
+			new GridScrollFx( document.getElementById( 'grid' ), {
+				viewportFactor : 0.4
+			} );
+		</script>
+		<script src="jquery.js"></script>
+	
+</body></html>

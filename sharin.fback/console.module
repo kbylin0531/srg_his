@@ -1,0 +1,12 @@
+<?php
+namespace {
+
+    use Sharin\ClassLoader;
+
+    require __DIR__.'/Common/constant.console.inc';
+    require __DIR__.'/Common/debug_suit.inc';
+    require __DIR__.'/classes.inc';
+
+    ClassLoader::register();
+
+}

@@ -1,0 +1,67 @@
+<extend file="/System/Common/View/basic.html" />
+<block name="script">
+    <script>
+        soya.ready(function () {
+            var message = soya.context.getHash();
+            message && Dazzling.toast.error(decodeURI(message));
+
+            var loginform = $("#login-form");
+            loginform.on('submit',function () {
+                var password = $("[name=password]");
+                password.val(soya.utils.md5(soya.utils.sha1(password.val())));
+            });
+        });
+    </script>
+</block>
+<block name="body">
+    <div class="user-login">
+        <div class="row ">
+            <div class="col-md-6 bs-reset grogb" >
+                <div class="login-bg"></div>
+            </div>
+            <div class="col-md-6 login-container bs-reset">
+                <div class="login-content bs-reset">
+                    <h1>管理员登录</h1>
+                    <p> 目前集成了较有限的功能,并且开发和测试使用的是45版本以上的chrome或者42版本以上的火狐，为得到较好的体验，请使用以上两款推荐的浏览器登录操作 </p>
+                    <form action="__ACTION__" method="POST" id="login-form" class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">用户名</label>
+                            <div class="col-sm-10">
+                                <input class="form-control form-control-solid" type="text" name="username" /></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">密码</label>
+                            <div class="col-sm-10">
+                                <input class="form-control form-control-solid" type="password" name="password" /></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="remember" value="1" type="checkbox"> 请记住我
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">登录</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="login-footer">
+                    <div class="row bs-reset">
+                        <div class="col-xs-4 bs-reset">
+                        </div>
+                        <div class="col-xs-8 bs-reset">
+                            <div class="login-copyright text-right">
+                                 版权归XXX所有
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>

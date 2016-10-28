@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1c3b38ca-782d-472c-9c72-6d26d08cd184" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/InternetWorm/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/MaterialInterface.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/MenuInterface.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/MessageInterface.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/UserInterface.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/WXBiz/ErrorCode.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/WXBiz/PKCS7Encoder.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/WXBiz/Prpcrypt.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/WXBiz/SHA1.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/WXBiz/Sample.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/WXBiz/WXBizMsgCrypt.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/WXBiz/XMLParse.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/WebInterface.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/Wechat.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/WechatError.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/php-emoji/.gitmodules" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/php-emoji/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/php-emoji/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/php-emoji/build/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/php-emoji/build/build.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/php-emoji/build/build_css.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/php-emoji/build/build_map.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/php-emoji/build/build_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/php-emoji/build/inc.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/php-emoji/build/inc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/php-emoji/build/old_optimize.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/php-emoji/build/old_parse.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/php-emoji/demo/html_demo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/php-emoji/demo/table.htm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/php-emoji/lib/emoji.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/php-emoji/lib/emoji.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/php-emoji/lib/emoji.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Common/Library/php-emoji/test/test.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Controller/AccountAdminController.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Controller/AccountController.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Controller/FileController.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Controller/IndexController.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Controller/ManagementController.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Controller/MaterialController.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Model/AccountModel.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Model/FileModel.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Model/ImageMaterialModel.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Model/MaterialModel.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/Model/TextMoterialModel.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Account/add.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Account/checkRes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Account/lists.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Account/stepFirst.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Account/stepSecond.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Account/stepThird.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Account/waitAudit.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Addons/_nav.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Addons/add.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Addons/adminlist.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Addons/category.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Addons/config.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Addons/credit.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Addons/dispatch_jump_mobile.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Addons/edit.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Addons/import.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Addons/lists.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Addons/moblieForm.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Addons/nulldeal.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Addons/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Addons/param.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Addons/preview.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Addons/reports.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Addons/tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Addons/weixinPreview.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Addons/widget.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Article/detail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Article/downloadDetail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Article/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Article/lists.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Base/Public/body.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Base/Public/body_no_side.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Base/Public/footer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Base/Public/head.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Base/Public/header.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Base/Public/login_footer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Base/Public/mobile_foot.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Base/Public/mobile_head.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Base/common.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Base/common_no_side.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Base/login_base.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Category/edit.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Category/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Category/lists.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Category/operate.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Category/tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/CreditData/lists.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/allDisplay.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/allEditor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/banner-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/banner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/blank-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/blank.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/blankline-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/blankline.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/case-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/case.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/fixedmodule-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/fixedmodule.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/goods-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/goods.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/goodsdetail-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/goodsdetail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/header-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/header.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/mutipic_banner-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/mutipic_banner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/mutipic_goods-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/mutipic_goods.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/notice-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/notice.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/piclist-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/piclist.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/picnav-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/picnav.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/richtext-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/richtext.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/searchgoods-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/searchgoods.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/textnav-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/textnav.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/title-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/title.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/usercenter-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/DiyTemplate/usercenter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Doc/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/File/addPic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/File/systemPics.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/File/uploadDialog.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/File/userPics.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Forum/form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Forum/form_right.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Forum/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Forum/store.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Forum/store_detail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Forum/store_right.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Forum/topic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Index/_footer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Index/_head.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Index/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Index/bind_follow.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Index/download.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Index/help.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Index/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Index/introduction.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Index/lead.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Index/license.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Index/main.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Index/question.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Index/union.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Material/_nav.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Material/_uploadImage.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Material/add_material.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Material/imageLists.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Material/material_data.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Material/material_lists.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Material/news_detail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Material/textAdd.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Material/textLists.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Material/video_data.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Material/video_lists.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Material/voice_data.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Material/voice_lists.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Message/add.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Message/custom_sendall.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Message/custom_sendall_lists.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Message/message_lists.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/Message/sendall_lists.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/User/bindLogin.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/User/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/User/profile.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/User/register.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/User/simpleLogin.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/WeixinMessage/collect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/WeixinMessage/lists.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Wechat/View/WeixinMessage/person.html" afterPath="" />
+    </list>
+    <ignored path="soyabean.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="soyabean" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="AddonsController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/System/Common/Library/AddonsController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2016">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/System/Common/Library/AdminController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-576">
+              <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/System/Common/Library/CommonController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/System/Common/Library/HomeController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-162">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SystemController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/SystemController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3294">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WechatController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/WechatController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <marker date="1476764388437" expanded="true" signature="1351:1610" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticleController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ArticleController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MaterialController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/MaterialController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1440">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PublicController.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1920" />
+    <option name="height" value="1044" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soyabean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soyabean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soyabean" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soyabean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soyabean" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soyabean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soyabean" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="System" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soyabean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soyabean" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="System" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Common" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soyabean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soyabean" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="System" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Common" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Library" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soyabean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soyabean" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Install" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Common" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soyabean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soyabean" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Home" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soyabean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soyabean" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Home" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soyabean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soyabean" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soyabean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soyabean" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c3b38ca-782d-472c-9c72-6d26d08cd184" name="Default" comment="" />
+      <created>1476766316847</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1476766316847</updated>
+      <workItem from="1476766318704" duration="188000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="188000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1044" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Application/InternetWorm/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Install/Common/SQL/addon.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Install/Common/SQL/soya.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-810">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Install/Common/SQL/wp_addon_category.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Test/Controller/MemberController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Test/Controller/MenuController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/System/Common/Library/AddonsController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2016">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/System/Common/Library/AdminController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-576">
+          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/System/Common/Library/CommonController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/System/Common/Library/HomeController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/SystemController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3294">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/WechatController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <marker date="1476764388437" expanded="true" signature="1351:1610" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ArticleController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/MaterialController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1440">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

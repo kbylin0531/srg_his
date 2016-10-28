@@ -1,0 +1,21 @@
+<?php
+/**
+ * Email: linzongho@gmail.com
+ * Github: https://github.com/linzongho/Sharin
+ * User: asus
+ * Date: 8/22/16
+ * Time: 11:10 AM
+ */
+
+namespace Sharin\Core\Cache;
+use Sharin\Core\Storage;
+use Sharin\Developer;
+use Sharin\SharinException;
+
+/**
+ * 文件类型缓存类
+ * @author    liu21st <liu21st@gmail.com>
+ */
+class File implements CacheInterface {
+
+}
